@@ -1,1 +1,1 @@
-# fashi template
+# Fashi Template
