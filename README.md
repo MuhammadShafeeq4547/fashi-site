@@ -1,1 +1,1 @@
-# fashi template (Colorlib Web Agency)
+# fashi template
