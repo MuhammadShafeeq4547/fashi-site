@@ -1,1 +1,1 @@
-# fashi template
+# fashi-folder
