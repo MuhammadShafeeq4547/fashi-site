@@ -1,0 +1,3523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fashi</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* border: 1px solid; */
+            /* overflow: hidden; */
+
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: auto;
+            /* border: 1px solid; */
+        }
+
+        .parent-head {
+            width: 100%;
+            height: 180px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        .child {
+            width: 100%;
+            height: 55px;
+            border: 1px solid rgba(128, 128, 128, 0.302);
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+
+        .parent-child {
+            width: 1140px;
+            height: 100%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            display: flex;
+        }
+
+        .box {
+            width: 230px;
+            height: 100%;
+            /* border: 1px solid; */
+            border-right: 1px solid rgba(128, 128, 128, 0.687);
+            display: flex;
+            align-items: center;
+
+
+            /* justify-content: space-evenly; */
+        }
+
+        .fouji {
+            font-size: 16px;
+            margin-left: 3%;
+        }
+
+        .p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: -2px;
+            margin-left: 4%;
+        }
+
+
+        .box2 {
+            width: 710px;
+            height: 100%;
+            /* border: 3px solid green; */
+            border-right: 1px solid rgba(128, 128, 128, 0.638);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box2-child {
+            width: 160px;
+            height: 100%;
+            /* border: 1px solid yellowgreen; */
+            display: flex;
+            align-items: center;
+        }
+
+        .fouji2 {
+            margin-left: 13%;
+            font-size: 13px;
+        }
+
+        .p2 {
+            margin-left: 5%;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .box2-child2 {
+            width: 140px;
+            height: 100%;
+            /* border: 1px solid yellowgreen; */
+            display: flex;
+
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .fouji3 {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .box2-child3 {
+            width: 120px;
+            height: 100%;
+            /* border: 1px solid red; */
+            border-right: 1px solid rgba(128, 128, 128, 0.702);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .img-div {
+            width: 45px;
+            height: 16px;
+            /* margin-left: 4%; */
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+
+        .amrica {
+            width: 100%;
+            height: 100%;
+        }
+
+        .p-eng {
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .fouji4 {
+            font-size: 9px;
+            /* margin-left: 7%; */
+            cursor: pointer;
+        }
+
+        .box3 {
+            width: 80px;
+            height: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+        }
+
+        .fouji5 {
+            font-size: 13px;
+            margin-left: 16%;
+            cursor: pointer;
+        }
+
+        .p-log {
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 5%;
+            cursor: pointer;
+        }
+
+        .navbar2 {
+            width: 1140px;
+            height: 55px;
+            /* border: 1px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 90px;
+            height: max-content;
+            /* border: 1px solid; */
+        }
+
+        /* .logo-img{
+            width: 100%;
+            height: 100%;
+        } */
+        .nav2 {
+            width: 580px;
+            height: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.243);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .nav2-child {
+            width: 170px;
+            height: max-content;
+            /* border: 1px solid red; */
+            border-right: 1px solid rgba(128, 128, 128, 0.51);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .p-nav2 {
+            font-size: 17px;
+            font-weight: 400;
+            /* margin-left: 11%; */
+        }
+
+        .fouji6 {
+            font-size: 10px;
+            /* margin-left: 15%; */
+            color: gray;
+        }
+
+        .input {
+            width: 360px;
+            height: 100%;
+            border: none;
+            outline: none;
+            /* border: 1px solid yellowgreen; */
+            font-size: 17px;
+            color: gray;
+            padding-left: 20px;
+
+        }
+
+        .icon-search {
+            width: 50px;
+            height: 100%;
+            /* border: 1px solid; */
+            background-color: rgb(231, 171, 60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fouji7 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .icon-div2 {
+            width: 220px;
+            height: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+        }
+
+        .fouji8 {
+            font-size: 20px;
+            margin-left: 28%;
+            cursor: pointer;
+        }
+
+        .fouji9-div {
+            width: 25px;
+            height: max-content;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            position: relative;
+        }
+
+        .fouji9 {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            width: 355px;
+            height: 430px;
+            /* border: 1px solid red; */
+            position: absolute;
+            background-color: white;
+            top: 100px;
+            left: -270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 10px 0px gray;
+            visibility: hidden;
+            transition: 0.3s;
+            opacity: 0;
+            z-index: 10;
+        }
+
+        .fouji9-div:hover>.dropdown {
+            visibility: visible;
+            top: 60px;
+            opacity: 1;
+        }
+
+        .parent-dp {
+            width: 90%;
+            height: 95%;
+            /* border: 1px solid blue; */
+        }
+
+        .box-dp {
+            width: 100%;
+            height: 90px;
+            /* border: 1px solid green; */
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .img-dp {
+            width: 90px;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+
+        .image-dp {
+            width: 100%;
+            height: 100%;
+        }
+
+        .child-box {
+            width: 160px;
+            height: 100%;
+            /* border: 1px solid yellow; */
+        }
+
+        .p-dp {
+            color: rgb(231, 171, 60);
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 12px;
+        }
+
+        .p2-dp {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 14px;
+        }
+
+        .fouji10 {
+            font-size: 26px;
+        }
+
+        .box3-dp {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid blueviolet; */
+            border-top: 1px solid gray;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .p3-dp {
+            color: rgb(231, 171, 60);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .p4-dp {
+            color: rgb(231, 171, 60);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .box4-dp {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid; */
+            background-color: black;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .p5-dp {
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .bg {
+            background-color: rgb(231, 171, 60);
+        }
+
+        .p2-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 8%;
+        }
+
+        .navbar3 {
+            width: 100%;
+            height: 115px;
+            border: 1px solid;
+            background-color: rgb(37, 37, 37);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .parent-nav {
+            width: 1140px;
+            height: 53px;
+            /* border: 1px solid white; */
+            display: flex;
+        }
+
+        .box-1 {
+            width: 260px;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(59, 59, 59);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .small-div {
+            width: 170px;
+            height: max-content;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fouji12 {
+            color: white;
+            font-size: 20px;
+        }
+
+        .p-box1 {
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .fouji13 {
+            color: white;
+            font-size: 13px;
+        }
+
+        .dropdown2 {
+            width: 260px;
+            height: 320px;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 60px;
+            background-color: white;
+            box-shadow: 2px 2px 10px 0px gray;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.2s;
+            z-index: 10;
+        }
+
+        .box-1:hover>.dropdown2 {
+            visibility: visible;
+            opacity: 1;
+            top: 53px;
+        }
+
+        .lis {
+            list-style: none;
+            margin-left: 9%;
+            margin-top: 15px;
+            font-size: 17px;
+            font-weight: 400;
+            transition: 0.2s;
+        }
+
+        .color {
+            color: rgb(231, 171, 60);
+        }
+
+        .lis:hover {
+            color: rgb(231, 171, 60);
+        }
+
+        .box-2 {
+            width: 130px;
+            height: 100%;
+            /* border: 1px solid white; */
+            border-right: 1px solid;
+            background-color: rgb(231, 171, 60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .p-box2 {
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .box-3 {
+            width: 140px;
+            height: 100%;
+            /* border: 1px solid white; */
+            border-right: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .box-3:hover {
+            background-color: rgb(231, 171, 60);
+        }
+
+        .width {
+            width: 180px;
+            position: relative;
+        }
+
+        .dropdown3 {
+            width: 195px;
+            height: 140px;
+            /* border: 1px solid; */
+            background-color: black;
+            position: absolute;
+            top: 75px;
+            left: -10%;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 10;
+        }
+
+        .liss {
+            color: white;
+            margin-left: 12%;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            list-style: none;
+            transition: 0.2s;
+        }
+
+        .liss:hover {
+            color: rgb(231, 171, 60);
+        }
+
+        .width:hover>.dropdown3 {
+            visibility: visible;
+            opacity: 1;
+            top: 53px;
+        }
+
+        .width2 {
+            width: 160px;
+        }
+
+        .position {
+            position: relative;
+        }
+
+        .dropdown4 {
+            width: 210px;
+            height: 270px;
+            /* border: 1px solid white; */
+            background-color: black;
+            position: absolute;
+            top: 75px;
+            left: -50%;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 10;
+        }
+
+        .position:hover>.dropdown4 {
+            opacity: 1;
+            visibility: visible;
+            top: 53px;
+        }
+
+        .nav3 {
+            width: 1140px;
+            height: 60px;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: -60px;
+            background-color: rgb(76, 76, 76);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        .small-div2 {
+            width: 90px;
+            height: 35px;
+            /* border: 1px solid white; */
+            background-color: black;
+            border-radius: 5px;
+            margin-right: 1%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .p-small {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .fouji14 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .parent1-cont2 {
+            width: 100%;
+            /* height: 107.5vh; */
+            /* border: 1px solid green; */
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .parent1-img2 {
+            width: 100%;
+            height: 107.5vh;
+            /* border: 1px solid red; */
+            background-image: url(./hero-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: foji 6s linear infinite;
+        }
+
+        @keyframes foji {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            51% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+            }
+        }
+
+        .parent2-img2 {
+            width: 100%;
+            height: 107.5vh;
+            /* border: 1px solid red; */
+            background-image: url(./hero-1.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: foji2 6s linear infinite;
+        }
+
+        @keyframes foji2 {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            51% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+        }
+
+        .text-cont {
+            width: 70%;
+            /* height: 255px; */
+            height: max-content;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 8%;
+            top: 32%;
+        }
+
+        .small-div3 {
+            width: 110px;
+            height: 25px;
+            /* border: 1px solid ; */
+            overflow: hidden;
+        }
+
+
+        .p-small3 {
+            color: rgb(231, 171, 60);
+            font-size: 14px;
+            font-weight: 600;
+            /* margin-top: 100px; */
+            animation: fouji 3s linear infinite;
+        }
+
+        @keyframes fouji {
+            0% {
+                margin-top: 50px;
+            }
+
+            15% {
+                margin-top: 0px;
+            }
+
+            25% {
+                margin-top: 0px;
+            }
+
+            50% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: 0px;
+            }
+        }
+
+        .small-div4 {
+            width: 45.5%;
+            height: 100px;
+            /* border: 1px solid red; */
+            margin-top: -11px;
+            overflow: hidden;
+        }
+
+        .h1-small3 {
+            font-size: 72px;
+            font-weight: 600;
+            margin-top: 200px;
+            animation: fouji2 3s linear infinite;
+            /* animation-delay: 1s; */
+        }
+
+        @keyframes fouji2 {
+            0% {
+                margin-top: 200px;
+            }
+
+            15% {
+                margin-top: 200px;
+            }
+
+            25% {
+                margin-top: 200px;
+            }
+
+            26% {
+                margin-top: 200px;
+            }
+
+            35% {
+                margin-top: 0px;
+            }
+
+            50% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: 0px;
+            }
+        }
+
+        .small-div5 {
+            width: 430px;
+            height: 85px;
+            /* border: 1px solid red; */
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .p-small5 {
+            font-size: 16px;
+            font-weight: 400;
+            color: gray;
+            /* margin-top: 160px; */
+            transform: translateY(160px);
+            animation: fouji5 3s linear infinite;
+        }
+
+        @keyframes fouji5 {
+            0% {
+                transform: translateY(160px);
+            }
+
+            15% {
+                transform: translateY(160px);
+            }
+
+            25% {
+                transform: translateY(160px);
+            }
+
+            26% {
+                transform: translateY(160px);
+            }
+
+            36% {
+                transform: translateY(160px);
+            }
+
+            50% {
+                transform: translateY(0px);
+            }
+
+            51% {
+                transform: translateY(0px);
+            }
+
+            75% {
+                transform: translateY(0px);
+            }
+
+            76% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .button-parent {
+            width: 145px;
+            height: 60px;
+            /* border: 1px solid yellow; */
+            overflow: hidden;
+        }
+
+        .button {
+            width: 140px;
+            height: 45px;
+            /* border: 1px solid green; */
+            background-color: rgb(231, 171, 60);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(100px);
+            animation: fouji6 3s linear infinite;
+        }
+
+        @keyframes fouji6 {
+            0% {
+                transform: translateY(100px);
+            }
+
+            15% {
+                transform: translateY(100px);
+            }
+
+            25% {
+                transform: translateY(100px);
+            }
+
+            26% {
+                transform: translateY(100px);
+            }
+
+            37% {
+                transform: translateY(100px);
+            }
+
+            50% {
+                transform: translateY(100px);
+            }
+
+            51% {
+                transform: translateY(100px);
+            }
+
+            58% {
+                transform: translateY(0px);
+            }
+
+            75% {
+                transform: translateY(0px);
+            }
+
+            76% {
+                transform: translateX(0px);
+            }
+
+            85% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .p-button {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .rotate-parent {
+            width: 165px;
+            height: 165px;
+            /* border: 1px solid blue; */
+            border-radius: 50%;
+            position: absolute;
+            left: 46%;
+            top: 160px;
+            overflow: hidden;
+        }
+
+        .rotate-div {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid green; */
+            border-radius: 50%;
+            transform: rotate(90deg);
+            transform: translateX(170px);
+            animation: fouji7 3s linear infinite;
+        }
+
+        @keyframes fouji7 {
+            0% {
+                transform: translateX(170px);
+            }
+
+            25% {
+                transform: translateX(170px);
+            }
+
+            26% {
+                transform: translateX(170px);
+                transform: rotate(90deg);
+            }
+
+            35% {
+                transform: translateX(170px);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: translateX(0px);
+                transform: rotate(0deg);
+            }
+
+            51% {
+                transform: translateX(0px);
+                transform: rotate(0deg);
+            }
+
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .img-rotate {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .main2 {
+            width: 100%;
+            /* height: 120vh; */
+            /* border: 1px solid; */
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+
+        .parent-2 {
+            width: 90%;
+            /* height: 235px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box1-2 {
+            width: 30%;
+            /* height: 100%; */
+            /* border: 1px solid blue; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxx {
+            width: 100%;
+            /* height: 100%; */
+            /* border: 5px solid green; */
+            /* position: absolute; */
+        }
+
+        .banner1 {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .hover-div {
+            width: 120px;
+            height: 55px;
+            border: 5px solid rgba(255, 255, 255, 0.495);
+            position: absolute;
+            transition: 0.1s;
+        }
+
+        .box1-2:hover>.hover-div {
+            transform: scale(2);
+            height: 39%;
+            width: 45%;
+        }
+
+        .text2-div {
+            width: 120px;
+            height: 55px;
+            border: 1px solid white;
+            position: absolute;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .p-text2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .wi {
+            width: 150px;
+        }
+
+        .wid {
+            width: 110px;
+        }
+
+        /* ////////////////////////////////////// */
+        .parent1-cont {
+            width: 90%;
+            height: max-content;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .bgk-div {
+            width: 25%;
+            height: 600px;
+            /* border: 1px solid red; */
+            /* margin-left: 5%; */
+            background-image: url(./women-large.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* .img-large{
+            width: 100%;
+            height: 100%;
+        } */
+        .p-div {
+            width: 200px;
+            height: max-content;
+            position: absolute;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .p-bgk {
+            font-size: 46px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .p2-bgk {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .border1 {
+            width: 120px;
+            border: 1px solid white;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+
+        .parent-slider {
+            width: 67%;
+            height: 100;
+            /* border: 1px solid blue; */
+            /* margin-left: 8%; */
+        }
+
+        .parent-p {
+            width: 380px;
+            height: max-content;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .p1 {
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(128, 128, 128, 0.577);
+            cursor: pointer;
+        }
+
+        .bor {
+            border-bottom: 2px solid;
+            height: 32px;
+            color: black;
+        }
+
+        .slider-div {
+            width: 100%;
+            /* height: 410px; */
+            /* border: 1px solid blueviolet; */
+            margin-top: 35px;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 135%;
+            /* height: 410px; */
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+            animation: fouji11 8s linear infinite;
+        }
+
+        @keyframes fouji11 {
+            0% {
+                margin-left: 0;
+            }
+
+            15% {
+                margin-left: 0;
+            }
+
+            25% {
+                margin-left: -34.5%;
+            }
+
+            50% {
+                margin-left: -34.5%;
+            }
+
+            65% {
+                margin-left: 0;
+            }
+
+            75% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: 0;
+            }
+        }
+
+        .box-slider {
+            width: 23%;
+            /* height: 100%; */
+            /* border: 1px solid green; */
+        }
+
+        .img2-div {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid red; */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .women1 {
+            width: 100%;
+            /* position: absolute; */
+        }
+
+        .heart {
+            font-size: 24px;
+            position: absolute;
+            right: 10px;
+            top: -25px;
+            transition: 0.3s;
+            /* right: 10px;
+            top: 15px; */
+        }
+
+        .box-slider:hover>.img2-div>.heart {
+            top: 15px;
+        }
+
+        .botom-div {
+            width: 220px;
+            height: 50px;
+            /* border: 1px solid red; */
+            position: absolute;
+            bottom: -60px;
+            left: 6%;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-evenly;
+            transition: 0.3s;
+        }
+
+        .box-slider:hover>.img2-div>.botom-div {
+            bottom: 0;
+        }
+
+        .smll {
+            width: 18%;
+            height: 100%;
+            /* border: 1px solid; */
+            background-color: gold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bag {
+            color: white;
+            font-size: 18px;
+        }
+
+        .smll2 {
+            width: 55%;
+            height: 100%;
+            /* border: 1px solid; */
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .p-smll2 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .smll3 {
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid; */
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shufle {
+            font-size: 17px;
+        }
+
+        .cont-p {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .p1-cont {
+            color: gray;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .p2-cont {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 6px;
+
+        }
+
+        .p3-cont {
+            color: goldenrod;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 3px;
+        }
+
+        .main3 {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid; */
+            padding: 0px 0px 80px 0px;
+        }
+
+        .bgk-parent {
+            width: 90%;
+            height: 90vh;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 80px;
+            background-image: url(./time-bg.jpg);
+            background-position: center;
+            padding: 1px;
+        }
+
+        .parent-3 {
+            width: 440px;
+            /* height: 400px; */
+            /* border: 1px solid green; */
+            margin-left: 8%;
+            margin-top: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .h1-3 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .border2 {
+            width: 90px;
+            /* height: 1px; */
+            border: 2px solid rgb(231, 171, 60);
+            margin-top: 13px;
+        }
+
+        .p-3 {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            color: gray;
+            margin-top: 23px;
+            line-height: 26px;
+        }
+
+        .doller-div {
+            width: 180px;
+            height: 40px;
+            /* border: 1px solid blue; */
+            margin-top: 20px;
+        }
+
+        .p-doller {
+            font-size: 26px;
+            font-weight: 600;
+            color: rgb(231, 171, 60);
+        }
+
+        .span2 {
+            font-size: 16px;
+            font-weight: 400;
+            color: gray;
+        }
+
+        .parent-div {
+            width: 395px;
+            height: 85px;
+            /* border: 1px solid blueviolet; */
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box-sec {
+            width: 18%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px 2px rgba(128, 128, 128, 0.097);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .p-30 {
+            font-size: 35px;
+            font-weight: 700;
+            color: rgb(231, 171, 60);
+        }
+
+        .p-day {
+            font-size: 19px;
+            font-weight: 400;
+            color: gray;
+        }
+
+        .button2 {
+            width: 150px;
+            height: 45px;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            background-color: rgb(231, 171, 60);
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main4 {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid; */
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .top1 {
+            background-image: url(./man-large.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main5 {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid; */
+            padding: 70px 0px 60px 0px;
+        }
+
+        .parent-5 {
+            width: 100%;
+            height: 49vh;
+            /* border: 1px solid; */
+            display: flex;
+        }
+
+        .box-bgk {
+            width: 17%;
+            height: 100%;
+            /* border: 1px solid; */
+            background-image: url(./insta-1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .div-hover {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.318);
+            /* border: 1px solid red; */
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+
+        .box-bgk:hover>.div-hover {
+            opacity: 1;
+        }
+
+        .instagram1 {
+            color: white;
+            font-size: 38px;
+        }
+
+        .p-colorlib {
+            color: white;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .insta {
+            background-image: url(./insta-2.jpg);
+
+        }
+
+        .insta3 {
+            background-image: url(./insta-3.jpg);
+        }
+
+        .insta4 {
+            background-image: url(./insta-4.jpg);
+        }
+
+        .insta5 {
+            background-image: url(./insta-5.jpg);
+        }
+
+        .insta6 {
+            background-image: url(./insta-6.jpg);
+        }
+
+        .main6 {
+            width: 100%;
+            height: max-content;
+            padding: 0px 0px 60px 0px;
+            /* border: 1px solid; */
+        }
+
+        .text-parent {
+            width: 300px;
+            /* height: 80px; */
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .h1-text {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .border3 {
+            width: 95px;
+            border: 1px solid rgb(231, 171, 60);
+            margin-top: 12px;
+        }
+
+        .parent-6 {
+            width: 1120px;
+            height: max-content;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box-p6 {
+            width: 31%;
+            height: max-content;
+            /* border: 1px solid blue; */
+
+        }
+
+        .image {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid; */
+        }
+
+        .img-last1 {
+            width: 100%;
+        }
+
+        .text-p6 {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid green; */
+        }
+
+        .child-text {
+            width: 160px;
+            height: max-content;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .icon-div6 {
+            width: 105px;
+            height: max-content;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .calender {
+            color: rgb(232, 170, 59);
+            font-size: 17px;
+        }
+
+        .p2-text6 {
+            font-size: 16px;
+            font-weight: 400;
+            color: gray;
+        }
+
+        .space {
+            width: 32px;
+        }
+
+        .h1-parent {
+            width: 100%;
+            height: max-content;
+            /* border: 1px solid green; */
+            margin-top: 10px;
+        }
+
+        .h1-6 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        .p-6 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 10px;
+            line-height: 26px;
+            /* padding: 5px 0px 20px 0px; */
+        }
+
+        .parent2-6 {
+            width: 1120px;
+            height: 110px;
+            border: 1px solid gray;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .box-p2 {
+            width: 33%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            border-right: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center-div {
+            width: 240px;
+            height: max-content;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imgdiv {
+            width: 25%;
+            height: 100%;
+            /* border: 1px solid; */
+        }
+
+        .icon-img {
+            width: 100%;
+        }
+
+        .textdiv {
+            width: 65%;
+            height: 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .p-text6 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .p3-text6 {
+            font-size: 16px;
+            font-weight: 400;
+            /* margin-top: 5px; */
+        }
+
+        .right1 {
+            border: none;
+        }
+
+        .main7 {
+            width: 100%;
+            height: 20vh;
+            background-color: rgb(48, 48, 48);
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent-7 {
+            width: 1120px;
+            height: max-content;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .box-img {
+            width: 18%;
+            /* height: 100%; */
+            /* border: 1px solid red; */
+        }
+
+        .logo1 {
+            width: 80%;
+        }
+        .footer{
+            width: 100%;
+            height: max-content;
+            border: 1px solid;
+            background-color: rgba(0, 0, 0, 0.888);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .parent-footer{
+            width: 1120px;
+            height: max-content;
+            /* border: 1px solid white; */
+            margin-top: 70px;
+            display: flex;
+        }
+        .box-footer{
+            width: 32%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        .child-footer{
+            width: 70%;
+            height: max-content;
+            /* border: 1px solid yellow; */
+            margin-top: 20px;
+        }
+        .p-footer{
+            font-size: 17px;
+            font-weight: 400;
+            color: rgba(220, 220, 220, 0.745);
+            line-height: 30px;
+        }
+        .icon-div{
+            width: 200px;
+            height: 50px;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            /* padding: 20px 0px 30px 0px; */
+        }
+        .icon-{
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid blueviolet; */
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.626);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .facebook{
+            color: white;
+            font-size: 17px;
+        }
+        .icon-:hover{
+            background-color: rgb(231,171,60);
+        }
+        .h1-footer{
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+        .div-box{
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid white; */
+        }
+        .ul{
+            width: 100%;
+            height: 60%;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+        }
+        .li{
+            color: rgba(220, 220, 220, 0.548);
+            list-style: none;
+            line-height: 36px;
+            font-size: 17px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .dis{
+            display: flex;
+        }
+        .p2-footer{
+            font-size: 17px;
+            font-weight: 400;
+            color: rgba(220, 220, 220, 0.593);
+            margin-top: 30px;
+            line-height: 26px;
+        }
+        .parent3-box{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid white; */
+            margin-top: 20px;
+            display: flex;
+        }
+        .input1{
+            width: 67%;
+            height: 100%;
+            /* border: 1px solid; */
+            border: none;
+            outline: none;
+            background-color: rgb(48,48,48);
+            color: rgba(220, 220, 220, 0.713);
+            font-size: 17px;
+            padding-left: 20px;
+        }
+        .div-text{
+            width: 33%;
+            height: 100%;
+            background-color: rgb(231,171,60);
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p3-footer{
+            font-size: 17px;
+            font-weight: 500;
+            color: white;
+        }
+        .leftt{
+            width: 36%;
+        }
+        .last{
+            width: 100%;
+            border: 1px solid rgba(220, 220, 220, 0.69);
+            margin-top: 40px;
+        }
+        .last2{
+            width: 1120px;
+            /* height: 50px; */
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0px 20px 0px;
+        }
+        .child-last{
+            width: 55%;
+            height: max-content;
+            /* border: 1px solid white; */
+        }
+        .p-last{
+            color: rgba(220, 220, 220, 0.656);
+            text-align: center;
+            /* font-size: ; */
+        }
+        .img-last{
+            width: 26%;
+            height: max-content;
+            /* border: 1px solid white; */
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*       MEDIA... START... ENJOY       */
+
+        /* FOUJI */
+
+        /*              STAY BE HAPPY           */
+
+
+
+
+
+
+
+
+
+
+
+        /* /////////////////////////////////////////////// */
+
+        @media screen and (max-width:1440px) {
+
+            .parent1-img2 {
+                background-position-x: 50%;
+            }
+
+            .parent2-img2 {
+                background-position-x: 50%;
+            }
+
+            .text-cont {
+                height: max-content;
+            }
+
+        }
+
+        /* //////////////////////////// */
+        @media screen and (max-width:1350px) {
+
+            /* .parent1-cont2{
+                height: 92vh;
+            } */
+            .parent1-img2 {
+                height: 96vh;
+            }
+
+            .parent2-img2 {
+                height: 96vh;
+            }
+
+            .bgk-parent {
+                height: 80vh;
+            }
+
+            .parent-5 {
+                height: 42vh;
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+        /* /////////////////////////////////// */
+        @media screen and (max-width:1202px) {
+            .parent-child {
+                width: 950px;
+            }
+
+            .box2 {
+                width: 500px;
+            }
+
+            .navbar2 {
+                width: 950px;
+            }
+
+            .parent-nav {
+                width: 950px;
+            }
+
+            .nav3 {
+                width: 950px;
+            }
+
+            .small-div4 {
+                height: 200px;
+            }
+
+            .small-div5 {
+                width: 360px;
+            }
+
+            .slider {
+                width: 205%;
+                animation: fouji12 16s linear infinite;
+            }
+
+            @keyframes fouji12 {
+                0% {
+                    margin-left: 0;
+                }
+
+                15% {
+                    margin-left: 0;
+                }
+
+                25% {
+                    margin-left: -52.4%;
+                }
+
+                50% {
+                    margin-left: -52.4%;
+                }
+
+                65% {
+                    margin-left: 0;
+                }
+
+                75% {
+                    margin-left: 0;
+                }
+
+                100% {
+                    margin-left: 0;
+                }
+            }
+
+            .parent-6 {
+                width: 920px;
+            }
+
+            .parent2-6 {
+                width: 920px;
+            }
+
+            .parent-7 {
+                width: 930px;
+            }
+            .parent-footer{
+                width: 920px;
+            }
+            /* .icon-div{
+                width: 60%;
+            } */
+            .last2{
+                width: 920px;
+            }
+
+
+
+
+
+
+        }
+
+        /* ///////////////////////////// */
+        @media screen and (max-width: 1200px) {
+
+            .parent1-img2 {
+                /* background-position-x: 53%; */
+                height: 92vh;
+            }
+
+            .parent2-img2 {
+                /* background-position-x: 33%; */
+                height: 92vh;
+            }
+
+        }
+
+        /* ////////////////////////////////// */
+
+        @media screen and (max-width:993px) {
+            .parent-child {
+                width: 730px;
+            }
+
+            .box2 {
+                width: 320px;
+            }
+
+            .navbar2 {
+                width: 730px;
+            }
+
+            .nav2 {
+                width: 450px;
+            }
+
+            .icon-div2 {
+                width: 150px;
+            }
+
+            .fouji8 {
+                margin-left: 10%;
+            }
+
+            .nav2-child {
+                width: 200px;
+            }
+
+            .input {
+                width: 230px;
+            }
+
+            .parent-nav {
+                width: 730px;
+            }
+
+            .box-1 {
+                width: 370px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            /* .dropdown{
+                display: none;
+            } */
+            .dropdown2 {
+                display: none;
+            }
+
+            .dropdown3 {
+                display: none;
+            }
+
+            .dropdown4 {
+                display: none;
+            }
+
+            .nav3 {
+                width: 730px;
+            }
+
+            .text-cont {
+                width: 90%;
+            }
+
+            .small-div4 {
+                width: 100%;
+                height: 100px;
+            }
+
+            .small-div5 {
+                width: 660px;
+            }
+
+            .p-small5 {
+                font-size: 16px;
+            }
+
+            .rotate-parent {
+                top: 100px;
+                left: 55%;
+            }
+
+            .parent-2 {
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .box1-2 {
+                width: 100%;
+                padding: 10px 0px 20px 0px;
+            }
+
+            .parent1-cont {
+                width: 95%;
+            }
+
+            .bgk-div {
+                width: 100%;
+                background-size: cover;
+                background-position-y: 0px;
+                margin-left: 0;
+                /* margin: auto; */
+                /* background-repeat: no-repeat; */
+            }
+
+            .parent1-cont {
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+            }
+
+            .parent-slider {
+                width: 100%;
+            }
+
+            .slider {
+                /* width: 433%; */
+                animation: fouji14 16s linear infinite;
+            }
+
+            @keyframes fouji14 {
+                0% {
+                    margin-left: 0;
+                }
+
+                15% {
+                    margin-left: 0;
+                }
+
+                25% {
+                    margin-left: -52.4%;
+                }
+
+                37% {
+                    margin-left: -52.4%;
+                }
+
+                50% {
+                    margin-left: -105%;
+                }
+
+                65% {
+                    margin-left: -105%;
+                }
+
+                /* 70% {
+                margin-left: -222%;
+            } */
+
+                75% {
+                    margin-left: -105%;
+                }
+
+                /* 76%{
+                margin-left: -344%;
+            } */
+                85% {
+                    margin-left: -105%;
+                }
+
+                100% {
+                    margin-left: -0%;
+                }
+            }
+
+            .parent-3 {
+                /* margin-left: 20%; */
+                margin: auto;
+                margin-top: 100px;
+            }
+
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .top1 {
+                margin-top: 90px;
+            }
+
+            .parent-6 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 700px;
+            }
+
+            .box-p6 {
+                width: 47%;
+            }
+
+            .top- {
+                margin-top: 20px;
+            }
+
+            .parent2-6 {
+                width: 700px;
+                height: max-content;
+                display: flex;
+                flex-wrap: wrap;
+                /* margin-left: -10px; */
+            }
+
+            .box-p2 {
+                width: 100%;
+            }
+
+            .center-div {
+                margin-left: -44%;
+                padding: 0px 0px 30px 0px;
+            }
+
+            .center1 {
+                padding: 20px 0px 25px 0px;
+            }
+
+            .parent-7 {
+                width: 700px;
+            }
+            .parent-footer{
+                width: 700px;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+            }
+            .box-footer{
+                width: 100%;
+            }
+            /* .icon-div{
+                width: 26%;
+            } */
+            .dis{
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            .diss{
+                margin-top: 28px;
+            }
+            .last2{
+                width: 700px;
+            }
+            .last2{
+                display: flex;
+                
+                flex-wrap: wrap;
+            }
+            .child-last{
+                width: 80%;
+            }
+            .img-last{
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                margin-top: 10px;
+            }
+
+
+
+
+
+        }
+
+        /* ////////////////////////////////// */
+
+        @media screen and (max-width:764px) {
+
+
+            .parent-child {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .box2 {
+                display: none;
+            }
+
+            .box {
+                display: none;
+            }
+
+            .box2-child3 {
+                width: 120px;
+            }
+
+            .icon-div2 {
+                width: 20%;
+            }
+
+            .box3 {
+                width: 130px;
+            }
+
+            .navbar2 {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .nav2-child {
+                display: none;
+            }
+
+            .logo {
+                padding: 0px 0px 10px 0px;
+            }
+
+            .input {
+                width: 100%;
+                height: 40px;
+            }
+
+            .icon-div2 {
+                width: 450px;
+                margin-top: 10px;
+            }
+
+            .fouji8 {
+                margin-left: 0;
+            }
+
+            .fouji9 {
+                margin-left: 3%;
+            }
+
+            .p2-text {
+                margin-left: 3%;
+            }
+
+            .dropdown {
+                display: none;
+            }
+
+            .parent-nav {
+                display: none;
+            }
+
+            .navbar3 {
+                display: none;
+            }
+
+            .nav3 {
+                margin-top: 0;
+                width: 450px;
+            }
+
+            .parent1-img2 {
+                display: none;
+            }
+
+            .parent2-img2 {
+                display: none;
+            }
+
+            .h1-small3 {
+                font-size: 45px;
+            }
+
+            .small-div5 {
+                width: 500px;
+            }
+
+            .main2 {
+                margin-top: 420px;
+            }
+
+            .text-cont {
+                margin-top: 150px;
+                padding: 0px 0px 90px 0px;
+            }
+
+            .rotate-parent {
+                display: none;
+            }
+
+            .parent-5 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .box-bgk {
+
+                width: 50%;
+            }
+
+            .main6 {
+                margin-top: 670px;
+            }
+
+            .parent-6 {
+                width: 500px;
+            }
+
+            .box-p6 {
+                width: 100%;
+            }
+
+            .h1-parent {
+                width: 100%;
+            }
+
+            .top-- {
+                margin-top: 20px;
+            }
+
+            .parent2-6 {
+                width: 500px;
+            }
+
+            .parent-7 {
+                width: 500px;
+            }
+
+            .box-img {
+                width: 40%;
+            }
+
+            .logo1 {
+                width: 85%;
+            }
+
+            .display {
+                display: none;
+            }
+            .parent-footer{
+                width: 500px;
+            }
+
+            .last2{
+                width: 80%;
+            }
+            .img-last{
+                width: 70%;
+            }
+            
+            
+            
+
+
+
+        }
+
+        /* ///////////////////////////////// */
+
+        @media screen and (max-width:574px) {
+            .nav2 {
+                width: 90%;
+            }
+
+            .icon-div2 {
+                width: 90%;
+            }
+
+            .nav3 {
+                width: 90%;
+            }
+
+            .small-div5 {
+                width: 90%;
+            }
+
+            .slider {
+                width: 433%;
+                animation: fouji13 16s linear infinite;
+            }
+
+            @keyframes fouji13 {
+                0% {
+                    margin-left: 0;
+                }
+
+                15% {
+                    margin-left: 0;
+                }
+
+                25% {
+                    margin-left: -111%;
+                }
+
+                37% {
+                    margin-left: -111%;
+                }
+
+                50% {
+                    margin-left: -222%;
+                }
+
+                65% {
+                    margin-left: -222%;
+                }
+
+                /* 70% {
+                margin-left: -222%;
+            } */
+
+                75% {
+                    margin-left: -334%;
+                }
+
+                /* 76%{
+                margin-left: -344%;
+            } */
+                85% {
+                    margin-left: -334%;
+                }
+
+                100% {
+                    margin-left: -334%;
+                }
+            }
+
+            .parent-p {
+                width: 65%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .parent-6 {
+                width: 90%;
+            }
+
+            .parent2-6 {
+                width: 90%;
+            }
+
+            .box-p2 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* .center-div{
+                margin-left: 0px;
+            } */
+            .center {
+                margin-left: -25%;
+            }
+
+            .parent-7 {
+                width: 90%;
+            }
+            .parent-footer{
+                width: 90%;
+            }
+            .box-footer{
+                width: 90%;
+            }
+
+
+
+        }
+
+        @media screen and (max-width:494px) {
+            .parent-3 {
+                width: 95%;
+            }
+
+            .parent-div {
+                width: 300px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .box-bgk {
+                width: 100%;
+            }
+
+            .main6 {
+                margin-top: 1700px;
+            }
+
+            .center {
+                margin-left: -10%;
+            }
+        }
+
+        @media screen and (max-width:494px) {
+            .h1-3 {
+                text-align: center;
+            }
+
+            /* .parent-3{
+                width: 95%;
+            } */
+
+        }
+
+        /* ///////////////////////////////////// */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="parent-head">
+            <div class="child">
+                <div class="parent-child">
+                    <div class="box">
+                        <i class="fa-solid fa-envelope fouji"></i>
+                        <p class="p"> hello.colorlib@gmail.com</p>
+                    </div>
+                    <div class="box2">
+                        <div class="box2-child">
+                            <i class="fa-solid fa-phone fouji2"></i>
+                            <p class="p2"> +65 11.188.888</p>
+                        </div>
+                        <div class="box2-child2">
+                            <i class="fa-brands fa-facebook-f fouji3"></i>
+                            <i class="fa-brands fa-twitter fouji3"></i>
+                            <i class="fa-brands fa-linkedin-in fouji3"></i>
+                            <i class="fa-solid fa-p fouji3"></i>
+                        </div>
+                    </div>
+                    <div class="box2-child3">
+                        <div class="img-div">
+                            <img class="amrica" src="./Flag_of_the_United_States.svg" alt="">
+                        </div>
+                        <p class="p-eng">English</p>
+                        <i class="fa-solid fa-chevron-down fouji4"></i>
+                    </div>
+                    <div class="box3">
+                        <i class="fa-solid fa-user fouji5"></i>
+                        <p class="p-log">Login</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="navbar2">
+                <div class="logo">
+                    <img class="logo-img" src="./logo.png" alt="">
+                </div>
+                <div class="nav2">
+                    <div class="nav2-child">
+                        <p class="p-nav2">All Categories</p>
+                        <i class="fa-solid fa-chevron-down fouji6"></i>
+                    </div>
+                    <input class="input" type="text" name="" id="" placeholder="What do you need?">
+                    <div class="icon-search">
+                        <i class="fa-solid fa-magnifying-glass fouji7"></i>
+                    </div>
+                </div>
+                <div class="icon-div2">
+                    <i class="fa-regular fa-heart fouji8"></i>
+                    <div class="fouji9-div">
+                        <i class="fa-solid fa-suitcase-rolling fouji9"></i>
+                        <div class="dropdown">
+                            <div class="parent-dp">
+                                <div class="box-dp">
+                                    <div class="img-dp">
+                                        <img class="image-dp" src="./man-3.jpg" alt="">
+                                    </div>
+                                    <div class="child-box">
+                                        <p class="p-dp">$60.00 x 1</p>
+                                        <p class="p2-dp">Kabino Bedside Table</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fouji10"></i>
+                                </div>
+                                <div class="box-dp">
+                                    <div class="img-dp">
+                                        <img class="image-dp" src="./women-1.jpg" alt="">
+                                    </div>
+                                    <div class="child-box">
+                                        <p class="p-dp">$60.00 x 1</p>
+                                        <p class="p2-dp">Kabino Bedside Table</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fouji10"></i>
+                                </div>
+                                <div class="box3-dp">
+                                    <p class="p3-dp">TOTAL:</p>
+                                    <p class="p4-dp">$120.00</p>
+
+                                </div>
+                                <div class="box4-dp">
+                                    <p class="p5-dp">View Card</p>
+                                </div>
+                                <div class="box4-dp bg">
+                                    <p class="p5-dp ">Check Out</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p2-text"> $150.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////// -->
+        <div class="navbar3">
+            <div class="parent-nav">
+                <div class="box-1">
+                    <div class="small-div">
+                        <i class="fa-solid fa-grip-lines fouji12"></i>
+                        <p class="p-box1">ALL DEPARTMENT</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-down fouji13"></i>
+                    <div class="dropdown2">
+                        <ul>
+                            <li class="lis color">Women`Clothing</li>
+                            <li class="lis">Men'Clothing</li>
+                            <li class="lis">Underwear</li>
+                            <li class="lis">Kid's Clothing</li>
+                            <li class="lis">Brand Fashion</li>
+                            <li class="lis">Accessories/Shoes</li>
+                            <li class="lis">Luxury Brands</li>
+                            <li class="lis">Brand Outdoor Appare!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <p class="p-box2">HOME</p>
+                </div>
+                <div class="box-3">
+                    <p class="p-box2">SHOP</p>
+                </div>
+                <div class="box-3 width">
+                    <p class="p-box2">COLLECTION</p>
+                    <div class="dropdown3">
+                        <ul>
+                            <li class="liss">Men's</li>
+                            <li class="liss">Women's</li>
+                            <li class="liss">Kid's</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <p class="p-box2">BLOG</p>
+                </div>
+                <div class="box-3 width2">
+                    <p class="p-box2">CONTACT</p>
+                </div>
+                <div class="box-3 position">
+                    <p class="p-box2">PAGES</p>
+                    <div class="dropdown4">
+                        <ul>
+                            <li class="liss">Blog Details</li>
+                            <li class="liss">Shoping Cart</li>
+                            <li class="liss">Checkout</li>
+                            <li class="liss">Faq</li>
+                            <li class="liss">Register</li>
+                            <li class="liss">Login</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav3">
+            <div class="small-div2">
+                <p class="p-small">MENU</p>
+                <i class="fa-solid fa-grip-lines fouji14"></i>
+            </div>
+        </div>
+        <div class="parent1-cont2">
+            <div class="parent1-img2"></div>
+            <div class="text-cont">
+                <div class="small-div3">
+                    <p class="p-small3">B A G , K I D S</p>
+                </div>
+                <div class="small-div4">
+                    <h1 class="h1-small3">Black friday</h1>
+                </div>
+                <div class="small-div5">
+                    <p class="p-small5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore at dolore</p>
+                </div>
+                <div class="button-parent">
+                    <div class="button">
+                        <p class="p-button">SHOP NOW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rotate-parent">
+                <div class="rotate-div">
+                    <img class="img-rotate" src="./download (1).jpg" alt="">
+                </div>
+            </div>
+
+            <!--  ////////// -->
+            <div class="parent2-img2"></div>
+            <div class="text-cont">
+                <div class="small-div3">
+                    <p class="p-small3">B A G , K I D S</p>
+                </div>
+                <div class="small-div4">
+                    <h1 class="h1-small3">Black friday</h1>
+                </div>
+                <div class="small-div5">
+                    <p class="p-small5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore at dolore</p>
+                </div>
+                <div class="button-parent">
+                    <div class="button">
+                        <p class="p-button">SHOP NOW</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rotate-parent">
+                <div class="rotate-div">
+                    <img class="img-rotate" src="./download (1).jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- //////////////////main2/////////////////// -->
+    <section class="main2">
+        <div class="parent-2">
+            <div class="box1-2">
+                <div class="boxx">
+                    <img class="banner1" src="./banner-1.jpg" alt="">
+                </div>
+
+                <div class="hover-div"></div>
+                <div class="text2-div">
+                    <p class="p-text2">Men’s</p>
+                </div>
+            </div>
+            <div class="box1-2">
+                <div class="boxx">
+                    <img class="banner1" src="./banner-2.jpg" alt="">
+                </div>
+
+                <div class="hover-div wi"></div>
+                <div class="text2-div wi">
+                    <p class="p-text2">Women’s</p>
+                </div>
+            </div>
+            <div class="box1-2">
+                <div class="boxx">
+                    <img class="banner1" src="./banner-3.jpg" alt="">
+                </div>
+
+                <div class="hover-div wid"></div>
+                <div class="text2-div wid">
+                    <p class="p-text2">Kid’s</p>
+                </div>
+            </div>
+        </div>
+        <!-- ////parent1-cont//// -->
+        <div class="parent1-cont">
+
+            <div class="bgk-div">
+                <!-- <img class="img-large" src="./women-large.jpg" alt=""> -->
+                <div class="p-div">
+                    <p class="p-bgk">Women’s</p>
+                    <p class="p2-bgk">Discover More</p>
+                    <div class="border1"></div>
+                </div>
+            </div>
+            <div class="parent-slider">
+                <div class="parent-p">
+                    <p class="p1 bor">Clothings</p>
+                    <p class="p1">Handbag</p>
+                    <p class="p1">Shoes</p>
+                    <p class="p1">Accessories</p>
+                </div>
+                <div class="slider-div">
+                    <div class="slider">
+                        <!-- 11111111111 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./women-1.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">C O A T</p>
+                                <p class="p2-cont">Pure Pineapple</p>
+                                <p class="p3-cont">$14.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 222222222 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./women-2.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">S H O E S</p>
+                                <p class="p2-cont">Guangzhou Sweater</p>
+                                <p class="p3-cont">$13.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 333333333333 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./women-3.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">T O W E L</p>
+                                <p class="p2-cont">Pure Pineapple</p>
+                                <p class="p3-cont">$34.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 4444444444444 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./women-4.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">T O W E L</p>
+                                <p class="p2-cont">Converse Shoes</p>
+                                <p class="p3-cont">$14.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- //////section3/////////////// -->
+
+
+
+
+    <section class="main3">
+        <div class="bgk-parent">
+            <div class="parent-3">
+                <h1 class="h1-3">Deal Of The Week</h1>
+                <div class="border2"></div>
+                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ipsum dolor sit amet,
+                    consectetur adipisicing elit</p>
+                <div class="doller-div">
+                    <p class="p-doller">$35.00 <span class="span2"> / HanBag</span></p>
+                </div>
+                <div class="parent-div">
+                    <div class="box-sec">
+                        <p class="p-30">30</p>
+                        <p class="p-day">DAYS</p>
+                    </div>
+                    <div class="box-sec">
+                        <p class="p-30">06</p>
+                        <p class="p-day">HRS</p>
+                    </div>
+                    <div class="box-sec">
+                        <p class="p-30">16</p>
+                        <p class="p-day">MINS</p>
+                    </div>
+                    <div class="box-sec">
+                        <p class="p-30">33</p>
+                        <p class="p-day">SECS</p>
+                    </div>
+                </div>
+                <button class="button2">Shop Now</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--               main4              -->
+
+
+
+    <section class="main4">
+
+        <div class="parent1-cont row">
+
+            <div class="bgk-div top1">
+                <!-- <img class="img-large" src="./women-large.jpg" alt=""> -->
+                <div class="p-div">
+                    <p class="p-bgk">Men’s</p>
+                    <p class="p2-bgk">Discover More</p>
+                    <div class="border1"></div>
+                </div>
+            </div>
+            <div class="parent-slider">
+                <div class="parent-p">
+                    <p class="p1 bor">Clothings</p>
+                    <p class="p1">Handbag</p>
+                    <p class="p1">Shoes</p>
+                    <p class="p1">Accessories</p>
+                </div>
+                <div class="slider-div">
+                    <div class="slider">
+                        <!-- 11111111111 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./man-1.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">C O A T</p>
+                                <p class="p2-cont">Pure Pineapple</p>
+                                <p class="p3-cont">$14.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 222222222 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./man-2.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">S H O E S</p>
+                                <p class="p2-cont">Guangzhou Sweater</p>
+                                <p class="p3-cont">$13.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 333333333333 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./man-3.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">T O W E L</p>
+                                <p class="p2-cont">Pure Pineapple</p>
+                                <p class="p3-cont">$34.00</p>
+                            </div>
+
+                        </div>
+                        <!-- 4444444444444 -->
+                        <div class="box-slider">
+                            <div class="img2-div">
+                                <img class="women1" src="./man-4.jpg" alt="">
+                                <i class="fa-regular fa-heart heart"></i>
+                                <div class="botom-div">
+                                    <div class="smll">
+                                        <i class="fa-solid fa-suitcase-rolling bag"></i>
+                                    </div>
+                                    <div class="smll2">
+                                        <p class="p-smll2">+ Quick View</p>
+                                    </div>
+                                    <div class="smll3">
+                                        <i class="fa-solid fa-shuffle shufle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont-p">
+                                <p class="p1-cont">T O W E L</p>
+                                <p class="p2-cont">Converse Shoes</p>
+                                <p class="p3-cont">$14.00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--                  main5                -->
+
+
+
+    <section class="main5">
+        <div class="parent-5">
+            <!--      box-bgk            -->
+            <div class="box-bgk">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+            <!--      2           -->
+            <div class="box-bgk insta">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+            <!--          3          -->
+            <div class="box-bgk insta3">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+            <!--          4          -->
+            <div class="box-bgk insta4">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+            <!--          5          -->
+            <div class="box-bgk insta5">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+            <!--          6         -->
+            <div class="box-bgk insta6">
+                <div class="div-hover">
+                    <i class="fa-brands fa-instagram instagram1"></i>
+                    <p class="p-colorlib">colorlib_Collection</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--            main6                -->
+
+
+
+    <section class="main6">
+        <div class="text-parent">
+            <h1 class="h1-text">From The Blog</h1>
+            <div class="border3"></div>
+        </div>
+        <div class="parent-6">
+            <div class="box-p6">
+                <div class="image">
+                    <img class="img-last1" src="./latest-1.jpg" alt="">
+                </div>
+                <div class="text-p6">
+                    <div class="child-text">
+                        <div class="icon-div6">
+                            <i class="fa-regular fa-calendar calender"></i>
+                            <p class="p2-text6"> May 4,2019</p>
+                        </div>
+                        <div class="icon-div6 space">
+                            <i class="fa-regular fa-comment calender"></i>
+                            <p class="p2-text6"> 5</p>
+                        </div>
+                    </div>
+                    <div class="h1-parent">
+                        <h1 class="h1-6">The Best Street Style From London Fashion Week</h1>
+                    </div>
+                    <p class="p-6">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                    </p>
+                </div>
+            </div>
+            <!-- //////////box-p6///--2///////// -->
+            <div class="box-p6 top--">
+                <div class="image">
+                    <img class="img-last1" src="./latest-2.jpg" alt="">
+                </div>
+                <div class="text-p6">
+                    <div class="child-text">
+                        <div class="icon-div6">
+                            <i class="fa-regular fa-calendar calender"></i>
+                            <p class="p2-text6"> May 4,2019</p>
+                        </div>
+                        <div class="icon-div6 space">
+                            <i class="fa-regular fa-comment calender"></i>
+                            <p class="p2-text6"> 5</p>
+                        </div>
+                    </div>
+                    <div class="h1-parent">
+                        <h1 class="h1-6">Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h1>
+                    </div>
+                    <p class="p-6">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                    </p>
+                </div>
+            </div>
+            <!-- ///3//////// -->
+            <div class="box-p6 top-">
+                <div class="image">
+                    <img class="img-last1" src="./latest-3.jpg" alt="">
+                </div>
+                <div class="text-p6">
+                    <div class="child-text">
+                        <div class="icon-div6">
+                            <i class="fa-regular fa-calendar calender"></i>
+                            <p class="p2-text6"> May 4,2019</p>
+                        </div>
+                        <div class="icon-div6 space">
+                            <i class="fa-regular fa-comment calender"></i>
+                            <p class="p2-text6"> 5</p>
+                        </div>
+                    </div>
+                    <div class="h1-parent">
+                        <h1 class="h1-6">How To Brighten Your Wardrobe With A Dash Of Lime</h1>
+                    </div>
+                    <p class="p-6">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="parent2-6">
+            <div class="box-p2">
+                <div class="center-div center1 center">
+                    <div class="imgdiv">
+                        <img class="icon-img" src="./icon-1.png" alt="">
+                    </div>
+                    <div class="textdiv">
+                        <p class="p-text6">FREE SHIPPING</p>
+                        <p class="p3-text6">For all order over 99$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-p2">
+                <div class="center-div center">
+                    <div class="imgdiv">
+                        <img class="icon-img" src="./icon-2.png" alt="">
+                    </div>
+                    <div class="textdiv ">
+                        <p class="p-text6">DELIVERY ON TIME</p>
+                        <p class="p3-text6">If good have prolems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-p2 right1">
+                <div class="center-div center">
+                    <div class="imgdiv">
+                        <img class="icon-img" src="./icon-1.png" alt="">
+                    </div>
+                    <div class="textdiv">
+                        <p class="p-text6">SECURE PAYMENT</p>
+                        <p class="p3-text6">100% secure payment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--          main7              -->
+
+
+
+    <section class="main7">
+        <div class="parent-7">
+            <div class="box-img">
+                <img class="logo1" src="./logo-1.png" alt="">
+            </div>
+
+
+            <div class="box-img">
+                <img class="logo1" src="./logo-2.png" alt="">
+            </div>
+
+
+            <div class="box-img">
+                <img class="logo1" src="./logo-3.png" alt="">
+            </div>
+
+
+            <div class="box-img display">
+                <img class="logo1" src="./logo-4.png" alt="">
+            </div>
+
+
+            <div class="box-img display">
+                <img class="logo1" src="./logo-5.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- ////////////////////// -->
+
+
+
+
+    <!--             FOOTER                 -->
+
+
+
+    <section class="footer">
+        <div class="parent-footer">
+            <div class="box-footer">
+                <img src="./footer-logo.png" alt="">
+                <div class="child-footer">
+                    <p class="p-footer">Address: 60-49 Road 11378 New York</p>
+                    <p class="p-footer">Phone: +65 11.188.888</p>
+                    <p class="p-footer">Email: hello.colorlib@gmail.com</p>
+                </div>
+                <div class="icon-div">
+                    <div class="icon-">
+                        <i class="fa-brands fa-facebook-f facebook"></i>
+                    </div>
+                    <div class="icon-">
+                        <i class="fa-brands fa-instagram facebook"></i>
+                    </div>
+                    <div class="icon-">
+                        <i class="fa-brands fa-twitter facebook"></i>
+                    </div>
+                    <div class="icon-">
+                        <i class="fa-brands fa-pinterest facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer dis">
+                <div class="div-box">
+                    <h1 class="h1-footer">Information</h1>
+                    <ul class="ul">
+                        <li class="li">About Us</li>
+                        <li class="li">Checkout</li>
+                        <li class="li">Contact</li>
+                        <li class="li">Serivius</li>
+                   
+                    </ul>
+                </div>
+                <div class="div-box diss">
+                    <h1 class="h1-footer">My Account</h1>
+                    <ul class="ul">
+                        <li class="li">My Account</li>
+                        <li class="li">Contact</li>
+                        <li class="li">Shoping Cart</li>
+                        <li class="li">Shop</li>
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="box-footer leftt diss">
+                <h1 class="h1-footer">Join Our Newsletter Now</h1>
+                <p class="p2-footer">Get E-mail updates about our latest shop and special offers.</p>
+                <div class="parent3-box">
+                    <input class="input1" type="text" placeholder="Enter Your Mail">
+                    <div class="div-text">
+                        <p class="p3-footer">SUBSCRIBE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last"></div>
+        <div class="last2">
+            <div class="child-last">
+                <p class="p-last">Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
+            </div>
+            <div class="img-last">
+                <img src="./payment-method.png" alt="">
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
